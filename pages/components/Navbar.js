@@ -99,7 +99,7 @@ const Navbar = (props) => {
                   setProgress(40);
                   await props.handleFilter();
                   setProgress(100);
-                } catch {}
+                } catch { }
               }}
             >
               <svg
@@ -117,29 +117,6 @@ const Navbar = (props) => {
           </div>
 
           <div className="flex items-center">
-            <a
-              href="https://bookleedocs.super.site/"
-              target="_blank"
-            >
-              <div className="flex flex-col items-center group">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-7 w-7 sm:mx-3  text-skin-darkBlue cursor-pointer hover:scale-110 transition-all"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-
-                <span className="scale-0 absolute mt-10 group-hover:scale-100 bg-gray-100 sm:text-sm text-xs border-2 px-2 py-1 rounded shadow-xl font-semibold transition-all">
-                  How to use Booklee?
-                </span>
-              </div>
-            </a>
             <span className="hidden xl:block">
               <Link href="/ListBookForSelling">
                 <button
@@ -399,9 +376,9 @@ const Navbar = (props) => {
                               <button
                                 onClick={() => signOut()}
                                 className="w-full text-xl rounded-lg font-semibold text-skin-darkBlue my-2"
-                                onClick={() => {
-                                  setProgress(40);
-                                }}
+                              // onClick={() => {
+                              //   setProgress(40);
+                              // }}
                               >
                                 Logout
                               </button>
@@ -487,7 +464,7 @@ const Navbar = (props) => {
                   setProgress(40);
                   await props.handleFilter();
                   setProgress(100);
-                } catch {}
+                } catch { }
               }}
             >
               <svg
@@ -505,29 +482,6 @@ const Navbar = (props) => {
           </div>
 
           <div className="flex items-center">
-            <a
-              href="https://bookleedocs.super.site/"
-              target="_blank"
-            >
-              <div className="flex flex-col items-center group">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-7 w-7 sm:mx-3  text-skin-darkBlue cursor-pointer hover:scale-110 transition-all"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-
-                <span className="scale-0 absolute mt-10 group-hover:scale-100 bg-gray-100 sm:text-sm text-xs border-2 px-2 py-1 rounded shadow-xl font-semibold transition-all">
-                  How to use Booklee?
-                </span>
-              </div>
-            </a>
             <Link href="/auth/signin">
               <button
                 onClick={() => {
@@ -564,7 +518,7 @@ const Navbar = (props) => {
                 setProgress(40);
                 await props.handleFilter();
                 setProgress(100);
-              } catch {}
+              } catch { }
             }}
           >
             <svg
